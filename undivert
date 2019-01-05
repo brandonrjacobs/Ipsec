@@ -1,0 +1,6 @@
+# !sh
+ipfw delete 70
+ipfw delete 75
+echo
+ipfw list
+echo "*** Restoring normal IP packet processing ***"

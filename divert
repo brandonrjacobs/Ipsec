@@ -1,0 +1,6 @@
+# !sh
+ipfw add 70 divert 2000 ip from any to any in
+ipfw add 75 divert 2001 ip from any to any out
+echo
+ipfw list
+echo "*** Diverting IP packets to ports 2000/2001 ***"
